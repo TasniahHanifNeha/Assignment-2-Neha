@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,700;0,800;1,700;1,800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------nav--------- */
+.nav-container {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 4px #dbd9d9;
+    padding: 10px 0 18px 13px;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.logo p {
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.g-design {
+    color: #FF42A5;
+}
+
+.logo img {
+    width: 80px;
+    object-fit: cover;
+}
+
+.nav-item-container {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item-container a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #3C354F;
+    font-weight: 600;
+}
+
+.follow {
+    background: #ecebeb;
+    padding: 14px 16px;
+    border-radius: 6px;
+}
+
+.nav-item-container i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* -----------------goat-section--------------- */
+.goat-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 60px;
+    margin-bottom: 3rem;
+}
+
+.grad-word,
+.grad-word2 {
+    font-size: 90px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: -45px;
+    margin-bottom: 30px;
+}
+
+.goat-des>p {
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+}
+
+.play-list p {
+    font-size: 14px;
+}
+
+.play-list i {
+    margin-right: 5px;
+    color: #F948B2;
+}
+
+.goat-img img {
+    width: 650px;
+}
+
+.pink {
+    padding: 14px 35px;
+    border-radius: 30px;
+    background: #F948B2;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+.mint {
+    padding: 14px 35px;
+    border-radius: 30px;
+    background: #4EC5F7;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+.goat-btn {
+    padding-top: 1rem;
+}
+
+/* -------------funny-video------ */
+.funny-grad,
+.grad-word2 {
+    font-size: 33px;
+}
+
+.funny-grad-p {
+    font-size: 13px;
+}
+
+.instant-des p {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.funny-video-des {
+    text-align: center;
+    margin-bottom: -5px;
+    color: #4c4c4e;
+}
+
+.funny-card-p {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.funny-video-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin: 60px 80px;
+    gap: 10px;
+}
+
+.funny-video-cards {
+    margin: 50px 80px;
+}
+
+.fig-des {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #868688;
+}
+
+/* -----------overlay--------- */
+.funny-card-box {
+    position: relative;
+}
+
+.hover-play {
+    width: 100%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: #00000099;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 5.5rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #F948B2;
+    display: none;
+}
+
+.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    height: 99%;
+    background: #00000099;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 5.5rem;
+    cursor: pointer;
+    border: 1px solid #F948B2;
+}
+
+.hover-play:hover>* {
+    display: block;
+    opacity: 1;
+}
+
+/* -----------instant-play------- */
+.instant-play {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 60px 20px;
+}
+
+.instant-des {
+    text-align: right;
+    margin-top: -15rem;
+}
+
+.instant-des h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.soldier {
+    width: 90%;
+}
+
+.pink-cat {
+    bottom: 14rem;
+    position: relative;
+    left: -7rem;
+}
+
+.pink-cat img {
+    width: 45%;
+}
+
+/* ---------game-tab----------- */
+
+
+.game-tab {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+}
+
+.tab-box img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.tab-box {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+}
+
+.tab-box:hover {
+    border-radius: 50px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.new-line-tab {
+    margin-left: 6rem;
+}
+
+.tab-box p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ---------footer------------ */
+
+.footer-logo img {
+    width: 60px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    background: #0B0223;
+    color: #fff;
+    padding: 80px 0;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.imp-text {
+    padding: 20px 0;
+}
+
+.imp-text a {
+    text-decoration: none;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.social-links i {
+    font-size: 25px;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+}
+
+.footer-bottom small {
+    color: #666;
+    font-size: 12px;
+    padding-right: 3rem;
+}
+
+.footer-end {
+    padding-top: 30px;
+}
+
+.footer-end small {
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------For Mobile Device---------- */
+
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    .goat-section,
+    .nav-item-container,
+    .instant-play {
+        flex-direction: column;
+    }
+
+    .nav-item-container {
+        gap: 30px;
+        padding: 10px 0;
+    }
+
+    .nav-container {
+        gap: 35px;
+        box-shadow: none;
+        padding-top: 2rem;
+    }
+
+    .follow {
+        width: 120%;
+        text-align: center;
+    }
+
+    .goat-btn {
+        margin-top: 1.5rem;
+    }
+
+    .logo p {
+        font-size: 35px;
+    }
+
+    .logo img {
+        width: 55px;
+    }
+
+    /* ---goat------- */
+    .goat-section {
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .goat-img img {
+        width: 100%;
+    }
+
+    .goat-des>p {
+        font-size: 35px;
+        padding-bottom: 2.5rem;
+    }
+
+    .goat-des h1 {
+        font-size: 70px;
+    }
+
+    /* --------.funny-video-cards------ */
+    .funny-video-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin: 50px 25px;
+    }
+
+    .funny-grad-p {
+        font-size: 12px;
+    }
+
+    .overlay {
+        width: 100%;
+    }
+
+    .funny-grad,
+    .grad-word2 {
+        font-size: 25px;
+    }
+
+    /* --------instant------- */
+
+    .instant-des {
+        text-align: center;
+
+        margin-top: 0;
+    }
+
+    .soldier {
+        width: 86%;
+        position: relative;
+        right: -35px;
+    }
+
+    .instant-des h2 {
+        font-size: 30px;
+    }
+
+    .pink-cat {
+        top: -8rem;
+        left: -1rem;
+
+    }
+
+    .pink-cat img {
+        width: 44%;
+    }
+
+    /* ---------game-tab----- */
+
+    .game-tab {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+        gap: 0;
+    }
+
+    .tab-box p {
+        font-size: 9px;
+    }
+
+    .new-line-tab {
+        margin-left: 0;
+    }
+
+    .tab-box img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .tab-box p {
+        font-size: 10px;
+    }
+
+    .tab-box {
+        width: 130px;
+        padding: 5px;
+    }
+
+    /* ----footer--- */
+    .footer-logo {
+        padding-bottom: 15px;
+    }
+
+    footer {
+        padding: 50px 70px;
+    }
+
+    .imp-text {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .imp-text a {
+        padding: 0;
+    }
+
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom small {
+        padding-bottom: 20px;
+        padding-left: 35px;
+    }
+}
+
+
+
+
+/* ----------For Tablet Device---------- */
+@media screen and (min-width: 576px) and (max-width:900px) {
+
+
+
+    .goat-section,
+    .instant-play {
+        flex-direction: column;
+    }
+
+    .nav-item-container {
+        gap: 30px;
+        padding: 10px 0;
+    }
+
+    .nav-item-container a {
+        margin-right: 0;
+    }
+
+    .nav-container {
+        gap: 35px;
+        box-shadow: none;
+        padding-top: 2rem;
+    }
+
+    .follow {
+        width: 120%;
+        text-align: center;
+    }
+
+    .logo p {
+        font-size: 35px;
+    }
+
+    .logo img {
+        width: 55px;
+    }
+
+    /* ---goat------- */
+    .goat-section {
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+    .goat-btn {
+        margin-top: 1.5rem;
+    }
+    .goat-img img {
+        width: 100%;
+    }
+    .goat-des{
+        margin-top: 4rem;
+    }
+    .goat-des>p {
+        font-size: 50px;
+        padding-bottom: 2.5rem;
+    }
+
+    .goat-des h1 {
+        font-size: 70px;
+    }
+
+    /* --------.funny-video-cards------ */
+    .funny-video-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .funny-grad-p {
+        font-size: 15px;
+    }
+
+    .overlay {
+        width: 100%;
+    }
+
+    .funny-card-p {
+        font-size: 19px;
+    }
+
+    .funny-grad,
+    .grad-word2 {
+        font-size: 37px;
+    }
+
+    /* --------instant------- */
+
+    .instant-des {
+        text-align: center;
+
+        margin-top: 0;
+    }
+
+    .soldier {
+        width: 86%;
+        position: relative;
+        right: -35px;
+    }
+    .instant-des p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .instant-des h2 {
+        font-size: 43px;
+    }
+
+    .pink-cat {
+        top: -13rem;
+        left: -4rem;
+
+    }
+
+
+    /* ---------game-tab----- */
+
+    .game-tab {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+        gap: 30px;
+    }
+
+
+    .new-line-tab {
+        margin-left: 0;
+    }
+
+
+
+    /* ----footer--- */
+   
+}
+
+
